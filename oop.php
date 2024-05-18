@@ -49,21 +49,21 @@ class Member {
     }
 }
 
-// Usage
 
-// Create 2 books with the following properties
+
+
 $book1 = new Book("The Great Gatsby", 5);
 $book2 = new Book("To Kill a Mockingbird", 3);
 
-// Create 2 members with the following properties
+
 $member1 = new Member("John Doe");
 $member2 = new Member("Jane Smith");
 
-// Apply Borrow book method to each member
-$member1->borrowBook($book1); // John Doe borrows The Great Gatsby
-$member2->borrowBook($book2); // Jane Smith borrows To Kill a Mockingbird
 
-// Print Available Copies with their names
+$member1->borrowBook($book1); 
+$member2->borrowBook($book2);
+
+
 echo "Available Copies of '" . $book1->getTitle() . "': " . $book1->getAvailableCopies() . "\n";
 echo "Available Copies of '" . $book2->getTitle() . "': " . $book2->getAvailableCopies() . "\n";
 
