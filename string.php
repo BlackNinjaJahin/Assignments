@@ -1,25 +1,6 @@
 <?php 
-
-//for taking input from user
-
-function getPrompt($prompt){
-
-    echo $prompt;
-    return trim (fgets(STDIN)); 
-}
-
-// initilized array
-
-$strings = [] ;
-
-// for taking input from user
-for($i=0 ; $i<4; $i++){
-
-  $prompt = getPrompt("");
-  $strings [] = $prompt;
-}
-
-
+//taking string
+$strings = ["Hello", "World", "PHP", "Programming"];
 foreach($strings  as $string){
 
    $vowels = ['a','e','i','o','u','A','E','I','O','U'];
@@ -44,5 +25,5 @@ for($i =strlen($string)-1; $i>=0; $i--){
 
 
 }
-echo "Original String: $string, Vowel Count: $vowelC, Reversed String: $revString\n";
+echo "Original String: $string, Vowel Count: $VowelC, Reversed String: $revString\n";
 }
